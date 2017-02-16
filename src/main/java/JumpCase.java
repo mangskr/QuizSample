@@ -73,11 +73,21 @@ public class JumpCase {
     }
 
     public static void main(String[] args) {
+        // Start time
+        long startTime = System.currentTimeMillis();
+
         JumpCase jumpCase = new JumpCase();
 
-        int length = 2;
+        int length = 40;
 
         //아래는 테스트로 출력해 보기 위한 코드입니다.
         System.out.println(jumpCase.jumpCase(length));
+
+        // End time
+        long endTime = System.currentTimeMillis();
+
+        // Total time
+        long lTime = endTime - startTime;
+        System.out.println("TIME : " + lTime + "(ms) => " + lTime / 1000.00 + "(s)");
     }
 }
